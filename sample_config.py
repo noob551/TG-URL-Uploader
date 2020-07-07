@@ -1,6 +1,6 @@
 import os
 
-import config (object):
+import config(object):
     # get a token from https://chatbase.com
     CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "29547940-445e-4c73-8cee-a8da5378a432")
     # get a token from @BotFather
