@@ -2,12 +2,12 @@ import os
 
 class Config(object):
     # get ken from https://chatbase.com
-    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "")
+    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "29547940-445e-4c73-8cee-a8da5378a432")
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "998649632:AAGUNnSXBAi6LEmKabwWxZCCUp6E9JL-u8I")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
+    APP_ID = int(os.environ.get("APP_ID", "1723688")
+    API_HASH = os.environ.get("API_HASH", "2f4170a3cbee84e17d536af1f445673c")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
@@ -20,7 +20,7 @@ class Config(object):
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 50000000
     # chunk size that should be used with requests
-    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", ))
+    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE","128")
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
     # proxy for accessing youtube-dl in GeoRestricted Areas
@@ -33,4 +33,4 @@ class Config(object):
     # set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3600
     # watermark file
-    DEF_WATER_MARK_FILE = ""
+    DEF_WATER_MARK_FILE = "karan"
