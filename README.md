@@ -13,7 +13,7 @@ An Open Source ALL-In-One Telegram RoBot, that can do lot of things.
 
 #### The Easy Way
 
-
+https://heroku.com/deploy
 
 #### The Hard Way
 
