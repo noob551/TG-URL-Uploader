@@ -2,15 +2,15 @@ import os
 
 class Config(object):
     # get ken from https://chatbase.com
-    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "29547940-445e-4c73-8cee-a8da5378a432")
+    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "")
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "998649632:AAGUNnSXBAi6LEmKabwWxZCCUp6E9JL-u8I")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", "1723688")
-    API_HASH = os.environ.get("API_HASH", "2f4170a3cbee84e17d536af1f445673c")
+    APP_ID = int(os.environ.get("APP_ID", "")
+    API_HASH = os.environ.get("API_HASH", "")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1181331306").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
     # Banned Unwanted Members..
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
     # the download location, where the HTTP Server runs
@@ -20,7 +20,7 @@ class Config(object):
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 50000000
     # chunk size that should be used with requests
-    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
+    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", ))
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
     # proxy for accessing youtube-dl in GeoRestricted Areas
