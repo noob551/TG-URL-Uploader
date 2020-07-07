@@ -1,7 +1,7 @@
 import os
 
-class Config (object):
-    # get a t oken from https://chatbase.com
+class Config(object):
+    # get ken from https://chatbase.com
     CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "29547940-445e-4c73-8cee-a8da5378a432")
     # get a token from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "998649632:AAGUNnSXBAi6LEmKabwWxZCCUp6E9JL-u8I")
